@@ -26,12 +26,15 @@ This came from [ Kyle Shevlin ](https://kyleshevlin.com/bash-shortcut-copy-your-
 ### Fuzzy finder useful commands
 *  `fzf` https://github.com/junegunn/fzf immensely helpful for navigating the command line interface.
 * Search current directory:
-{% highlight shell %}
+{% highlight console %}
 ctrl+t
 {% endhighlight %}
-* Search previous CLI commands: `ctrl+r`
+* Search previous CLI commands: 
+{% highlight console %}
+ctrl+r
+{% endhighlight %}
 
 ### Navigating the line itself
 Spending time moving around the line after a typo can be a pain. The following have saved me quite a bit of time:
 
--  
+  
