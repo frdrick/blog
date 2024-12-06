@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<!-- <ul class="tags"> -->
+<!--   {% for tag in item.tags %} -->
+<!--     <li class="tag">{{ tag }}</li> -->
+<!--   {% endfor %} -->
+<!-- </ul> -->
+<div class="post-content">
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <div class="post-content">
+    {% for item in site.portfolio %}
+      <div class="portfolio-item">
+        <h2 class="post-subtitle"><a href="{{ item.link }}">{{ item.title }}</a></h2>
+        <p>{{ item.summary }}</p>
+      <!-- {% assign image_path = page.image | strip | split: '[' | last | split: ']' | first %} -->
+      <img src="{{ item.image }}", width="{{ item.width}}", alt="Project Image">
+      <figcaption>{{ item.caption }}</figcaption>
+      </div>
+    {% endfor %}
+  </div>
+</div>

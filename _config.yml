@@ -1,4 +1,6 @@
 # Welcome to Jekyll!
+# NOTE: For changing other settings use:
+# /opt/homebrew/lib/ruby/gems/3.3.0/gems/minima-2.5.2
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -17,14 +19,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: Freddy Marten
+# Data science, Maths, programming, statistics and whatever else I find interesting.
+title: "Freddy Marten"
 email: martenfreddy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I hope to use this blog as a way to keep track of my ideas and progress as I learn more about maths, programming, statistics and whatever else I find interesting.
 
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "freddymarten.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: frdrick 
 
@@ -33,6 +34,14 @@ theme: minima
 plugins:
   - jekyll-feed
 
+header_pages:
+  - portfolio.markdown
+  - about.markdown
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
