@@ -24,7 +24,7 @@ To use this the following into the CLI:
 This came from [ Kyle Shevlin ](https://kyleshevlin.com/bash-shortcut-copy-your-present-working-directory-to-your-clipboard/)
 
 ### Fuzzy finder useful commands
-*  `fzf` https://github.com/junegunn/fzf immensely helpful for navigating the command line interface.
+*  `fzf`  [find on github](https://github.com/junegunn/fzf) immensely helpful for navigating the command line interface.
 * Search current directory:
 {% highlight console %}
 ctrl+t
@@ -36,5 +36,15 @@ ctrl+r
 
 ### Navigating the line itself
 Spending time moving around the line after a typo can be a pain. The following have saved me quite a bit of time:
-
-  
+* Go to the start of the command prompt (if in bash this is where the $ sign is)
+{% highlight console %}
+ctrl + a
+{% endhighlight %}
+* Go to the end:
+{% highlight console %}
+ctrl + e
+{% endhighlight %}
+* Toggle between the start of the line and the current position:
+{% highlight console %}
+ctrl + e
+{% endhighlight %}

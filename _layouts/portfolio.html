@@ -11,13 +11,15 @@ layout: default
 
   <div class="post-content">
     {% for item in site.portfolio %}
-      <div class="portfolio-item">
-        <h2 class="post-subtitle"><a href="{{ item.link }}">{{ item.title }}</a></h2>
-        <p>{{ item.summary }}</p>
-      <!-- {% assign image_path = page.image | strip | split: '[' | last | split: ']' | first %} -->
-      <img src="{{ item.image }}", width="{{ item.width}}", alt="Project Image">
+    <div class="portfolio-item">
+      <h2 class="post-subtitle"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <p>{{ item.summary }}</p>
+      <img src="{{ item.image }}" , width="{{ item.width}}" , alt="Project Image">
       <figcaption>{{ item.caption }}</figcaption>
-      </div>
+    </div>
+    <br> <!-- adds a line break between paragraphs -->
+    <hr /> <!-- adds a horizontal line -->
+    <br> <!-- adds a line break between paragraphs -->
     {% endfor %}
   </div>
 </div>
