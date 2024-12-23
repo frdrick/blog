@@ -36,6 +36,7 @@ plugins:
 header_pages:
   - index.markdown
   - portfolio.markdown
+  - blog.markdown
   - about.markdown
 
 collections:

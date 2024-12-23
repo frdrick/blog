@@ -6,6 +6,7 @@ summary: Calculating the greenhouse gas emissions from paving over soil with con
 image: ../assets/pave_the_world/co2e_ghg_comparison.jpg
 width: 100%
 caption: Soil emissions of carbon dioxide, methane and nitrous oxide from sealing.
+highlight: true
 ---
 
 This project was a dissertation for my Master's degree in Data Science. It was very challenging but I learnt a lot about working with spatial data. I especially enjoyed the occasions when I reached out to my supervisors and the authors of some papers I was reading. When completing projects in the future I will make an effort to do more of that as I think it makes them both more enjoyable and better.

@@ -10,12 +10,12 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
 
   <div class="post-content">
-    {% for item in site.portfolio %}
-    <div class="portfolio-item">
-      <h2 class="post-subtitle"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-      <p>{{ item.summary }}</p>
-      <img src="{{ item.image }}" , width="{{ item.width}}" , alt="Project Image">
-      <figcaption>{{ item.caption }}</figcaption>
+    {% for project in site.portfolio %}
+    <div class="portfolio-project">
+      <h2 class="post-subtitle"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+      <p>{{ project.summary }}</p>
+      <img src="{{ project.image }}" , width="{{ project.width}}" , alt="Project Image">
+      <figcaption>{{ project.caption }}</figcaption>
     </div>
     <br> <!-- adds a line break between paragraphs -->
     <hr /> <!-- adds a horizontal line -->
