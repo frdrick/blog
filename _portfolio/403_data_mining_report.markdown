@@ -23,4 +23,4 @@ Were I to do this project again now I would:
 - Considering reviews of different clustering/classification algorithms more in when reading.
 - Attempt to implement a classification algorithm on the base video feed data (we were provided with a pre-processed image too).
 
-The full report is found here: [get pdf]({{site.url}}/assets/403_data_mining_report/data_mining_report.pdf)
+The full report is found here: [get pdf]({% link assets/403_data_mining_report/data_mining_report.pdf %})

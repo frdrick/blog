@@ -28,8 +28,8 @@ On a non-technical note, next time I do a large project I am going to spend more
 
 ### See the full project:
 
-- The dissertation can be found here: [get pdf]({{site.url}}/assets/pave_the_world/Freddy_Dissertation.pdf)
-- And a poster submitted for the project: [get pdf]({{site.url}}/assets/poster.pdf) 
+- The dissertation can be found here: [get pdf]({% link /assets/pave_the_world/Freddy_Dissertation.pdf %})
+- And a poster submitted for the project: [get pdf]({% link /assets/pave_the_world/poster.pdf %}) 
 
 [duck-db]: https://duckdb.org/
 [PostgreSQL]: https://www.postgresql.org/
