@@ -25,7 +25,7 @@ Software I am currently considering using (likely subject to change):
     - open cv
 - Some kind of object detection algorithm from Tensorflow/PyTorch/Keras
     - I want to compare these methods and see if I can use a more recent model than  
-- A labelling application (labellmg)
+- A labelling application (labellmg, Label Studio, Roboflow, Datatorch)
 - Github pages to host a website with some pictures of the birds visiting the feeder. 
 
 This will be my first major project using Docker - I have been reading up on the documentation and recently was looking into making a Dockerfile. I'm hoping after this project I will become a more proficient with the software.
