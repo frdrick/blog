@@ -143,10 +143,10 @@ This will, for the current user, add execute permissions for semester.
 ./semester | grep last-modified > ~/last-modified.txt
 ```
 
-    - We pipe into the ouput of `./semester` with `|`.
-    - `grep` searches for the string last-modified.
-    - Output this result into the next file using `>`.
-    - Specify the home directory my prepending our filename with `~/`.
+- We pipe into the ouput of `./semester` with `|`.
+- `grep` searches for the string last-modified.
+- Output this result into the next file using `>`.
+- Specify the home directory my prepending our filename with `~/`.
 
 [cs50]: [https://cs50.harvard.edu/x/2024/]
 [mit-missing]: [https://missing.csail.mit.edu/]
