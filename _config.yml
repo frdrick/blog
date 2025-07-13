@@ -76,4 +76,4 @@ page_gen:
 sqlite:
   - data: books
     file: _db/books.db
-    query: SELECT * FROM master
+    query: SELECT * FROM master ORDER BY DateRead desc

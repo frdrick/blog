@@ -22,7 +22,7 @@ title: books
 		<td><a href="/books/{{k.id}}.html">{{k.Title}}</a></td>
 		<td>{{k.Author}}</td>
 		<td>{{k.Stars}}</td>
-		<td>{{k.Finished}}</td>
+		<td data-sort="{{k.DateRead}}">{{k.Finished}}</td>
 		<td>{{k.ISBN}}</td>
 	</tr>
 	{% endfor %}
