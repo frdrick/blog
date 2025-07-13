@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+# Welcome to Jekyll!repository
 # NOTE: For changing other settings use:
 # /opt/homebrew/lib/ruby/gems/3.3.0/gems/minima-2.5.2
 #
@@ -26,12 +26,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "freddymarten.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: frdrick 
+github_username: frdrick
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll_sqlite
+  - jekyll-datapage-generator
 
 header_pages:
   - index.markdown
@@ -51,7 +53,8 @@ collections:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - _db
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -62,3 +65,15 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+page_gen:
+  - data: books
+    template: book
+    page_data_prefix: book
+    title: Title
+    name: id
+    extension: html
+
+sqlite:
+  - data: books
+    file: _db/books.db
+    query: SELECT * FROM master
