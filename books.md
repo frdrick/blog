@@ -5,7 +5,7 @@ title: books
 
 ## Books I've read
 
-<input type="text" id="searchInput"  placeholder="Search" title="Type in a name">
+<input type="text" id="searchInput"  placeholder="Search" title="Type in a name"  style="font-size:12pt;height:20px;width:100;">
 <table class = "sortable" id="myTable">
 	<thead>
 	<tr class="header">
