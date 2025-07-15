@@ -4,20 +4,25 @@ layout: default
 
 <!--Use book title as title for page-->
 <h1>{{page.book.Title}}</h1>
+<div>
+  <table>
+    <!--cycle through all books, creating a page for each, only including where values present -->
+    {% for k in page.book %} {% if k[1] and k[0] != "id" and k[0] != "Review"
+    and k[0] != "DateRead" %}
+    <tr>
+      <th>{{k[0]}}</th>
+      <td>{{k[1]}}</td>
+    </tr>
+    {% endif %} {% endfor %}
+  </table>
+</div>
 
-<table>
-  <!--cycle through all books, creating a page for each, only including where values present -->
-  {% for k in page.book %} {% if k[1] and k[0] != "id" and k[0] != "My Review"
-  and k[0] != "DateRead" %}
-  <tr>
-    <th>{{k[0]}}</th>
-    <td>{{k[1]}}</td>
-  </tr>
-  {% endif %} {% endfor %}
-</table>
-{% if page.book.review %}
+{% if page.book.Review %}
 <h2>Thoughts</h2>
 <body>
   {{page.book.Review}}
 </body>
+</br>
+</br>
 {% endif %}
+<a href="./">Back to all books</a>
