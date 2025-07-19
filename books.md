@@ -12,7 +12,7 @@ title: books
 		<th>Title</th>
 		<th>Author</th>
 		<th>Stars</th>
-		<th>Date Read</th>
+		<th>Finished</th>
 		<th class="no-sort">ISBN</th>
 	</tr>
 	</thead>
