@@ -19,7 +19,7 @@ title: books
 	<tbody>
 	{% for k in site.data.books %}
 	<tr>
-		<td><a href="/books/{{k.id}}.html">{{k.Title}}</a></td>
+		<td><a href="/books/{{k.ISBN}}.html">{{k.Title}}</a></td>
 		<td>{{k.Author}}</td>
 		<td>{{k.Stars}}</td>
 		<td data-sort="{{k.DateRead}}">{{k.Finished}}</td>
