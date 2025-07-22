@@ -8,7 +8,6 @@ categories: shell
 Continuing with the 2nd [MIT Missing][mit-missing] Semester exerises. Follow along with this part [here.][this-part]
 
 1. Read `man ls` and write an `ls` command that lists files in the following manner:
-
    - Includes all files, including hidden files
    - Sizes are listed in human-readable format (e.g. 454M instead of 454279954)
    - Files are ordered by recency
@@ -23,7 +22,6 @@ Continuing with the 2nd [MIT Missing][mit-missing] Semester exerises. Follow alo
    ```
 
    Here:
-
    - `-a` includes hidden files.
    - `-G` enables a colourized output.
    - `-t` sorts files by recency.
@@ -80,7 +78,6 @@ Continuing with the 2nd [MIT Missing][mit-missing] Semester exerises. Follow alo
    ```
 
    So we have a 1 in 100 chance of a failure. `>&2` means that our second message is directed (`>`) to a file descriptor (`&`) described by (`2`). Here:
-
    - `STDOUT`, `1` represents the Standard Output so the place where our output generally is sent.
    - `STDERR`, `2` represents the Standard Error so the place where we output error codes to. Not the standard error in statistics.
    - `>&2` is equivalent to `1>&2` where `1` represents the standard output `STDOUT`. Therefore, `STDOUT` is being redirected to `STDERR`. This can be used before after or between `echo` and the string in question.
@@ -170,5 +167,5 @@ Continuing with the 2nd [MIT Missing][mit-missing] Semester exerises. Follow alo
    }
    ```
 
-[mit-missing]: [https://missing.csail.mit.edu/]
+[mit-missing]: https://missing.csail.mit.edu/
 [this-part]: https://missing.csail.mit.edu/2020/shell-tools/

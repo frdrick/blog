@@ -148,5 +148,5 @@ This will, for the current user, add execute permissions for semester.
 - Output this result into the next file using `>`.
 - Specify the home directory my prepending our filename with `~/`.
 
-[cs50]: [https://cs50.harvard.edu/x/2024/]
-[mit-missing]: [https://missing.csail.mit.edu/]
+[cs50]: https://cs50.harvard.edu/x/2024/
+[mit-missing]: https://missing.csail.mit.edu/
