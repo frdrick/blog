@@ -4,4 +4,3 @@ title: Blog
 heading: Posts
 permalink: /blog/
 ---
-
